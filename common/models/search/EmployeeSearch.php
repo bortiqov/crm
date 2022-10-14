@@ -2,6 +2,7 @@
 
 namespace common\models\search;
 
+use common\models\User;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use common\models\Employee;
@@ -54,20 +55,23 @@ class EmployeeSearch extends Employee
 
         if (!$this->validate()) {
             // uncomment the following line if you do not want to return any records when validation fails
-             $query->where('0=1');
+            $query->where('0=1');
             return $dataProvider;
         }
 
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'company_id' => $this->company_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'created_by' => $this->created_by,
             'updated_by' => $this->updated_by,
             'status' => $this->status,
         ]);
+
+        if (\Yii::$app->user->role !== User::ROLE_ADMIN) {
+            $query->andWhere(['company_id' => \Yii::$app->user->identity->company->id]);
+        }
 
         $query->andFilterWhere(['ilike', 'first_name', $this->first_name])
             ->andFilterWhere(['ilike', 'last_name', $this->last_name])

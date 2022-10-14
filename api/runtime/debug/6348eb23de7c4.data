@@ -1,0 +1,1224 @@
+a:14:{s:6:"config";s:1591:"a:5:{s:10:"phpVersion";s:6:"7.4.21";s:10:"yiiVersion";s:6:"2.0.46";s:11:"application";a:8:{s:3:"yii";s:6:"2.0.46";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:6:"7.4.21";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:5:{s:23:"yiisoft/yii2-bootstrap5";a:4:{s:4:"name";s:23:"yiisoft/yii2-bootstrap5";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:15:"@yii/bootstrap5";s:74:"D:\OpenServer\domains\projects\test-api\vendor/yiisoft/yii2-bootstrap5/src";}s:9:"bootstrap";s:40:"yii\bootstrap5\i18n\TranslationBootstrap";}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.1.21.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:69:"D:\OpenServer\domains\projects\test-api\vendor/yiisoft/yii2-debug/src";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:69:"D:\OpenServer\domains\projects\test-api\vendor/yiisoft/yii2-faker/src";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.2.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:67:"D:\OpenServer\domains\projects\test-api\vendor/yiisoft/yii2-gii/src";}}s:26:"yiisoft/yii2-symfonymailer";a:3:{s:4:"name";s:26:"yiisoft/yii2-symfonymailer";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:18:"@yii/symfonymailer";s:77:"D:\OpenServer\domains\projects\test-api\vendor/yiisoft/yii2-symfonymailer/src";}}}}";s:3:"log";s:16105:"a:1:{s:8:"messages";a:22:{i:0;a:6:{i:0;s:68:"Bootstrap with yii\bootstrap5\i18n\TranslationBootstrap::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1665723171.901382;i:4;a:0:{}i:5;i:3088304;}i:1;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1665723171.903359;i:4;a:0:{}i:5;i:3265032;}i:2;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1665723171.903374;i:4;a:0:{}i:5;i:3265832;}i:3;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1665723171.910925;i:4;a:0:{}i:5;i:4302832;}i:4;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1665723171.914227;i:4;a:0:{}i:5;i:4769992;}i:5;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1665723171.91452;i:4;a:0:{}i:5;i:4803184;}i:18;a:6:{i:0;s:37:"Route requested: 'v1/employee/create'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1665723171.915533;i:4;a:0:{}i:5;i:4903464;}i:19;a:6:{i:0;s:18:"Loading module: v1";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1665723171.915539;i:4;a:0:{}i:5;i:4905088;}i:20;a:6:{i:0;s:32:"Route to run: v1/employee/create";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1665723171.918196;i:4;a:0:{}i:5;i:5162152;}i:21;a:6:{i:0;s:54:"Opening DB connection: pgsql:host=localhost;dbname=crm";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1665723171.928672;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6281848;}i:24;a:6:{i:0;s:2790:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'user'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.964336;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6483768;}i:27;a:6:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='user'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.979044;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6528360;}i:30;a:6:{i:0;s:121:"SELECT * FROM "user" WHERE ("token"='gWK9qyhg1cx7dlCIT6xRE0469zOagFb_2qAOEwTDQqqqmlqK00QkrzwWQ0cCA2lm') AND ("status"=10)";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.983946;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6825248;}i:33;a:6:{i:0;s:55:"User '3' logged in from 127.0.0.1. Session not enabled.";i:1;i:4;i:2;s:19:"yii\web\User::login";i:3;d:1665723171.989911;i:4;a:0:{}i:5;i:7209280;}i:34;a:6:{i:0;s:65:"Rate limit skipped: "user" does not implement RateLimitInterface.";i:1;i:4;i:2;s:37:"yii\filters\RateLimiter::beforeAction";i:3;d:1665723171.990609;i:4;a:0:{}i:5;i:7270576;}i:35;a:6:{i:0;s:102:"Running action: yii\rest\CreateAction::run(), invoked by api\modules\v1\controllers\EmployeeController";i:1;i:8;i:2;s:30:"yii\base\Action::runWithParams";i:3;d:1665723171.990637;i:4;a:0:{}i:5;i:7269440;}i:36;a:6:{i:0;s:2794:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'employee'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.990875;i:4;a:0:{}i:5;i:7314120;}i:39;a:6:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='employee'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.994524;i:4;a:0:{}i:5;i:7323736;}i:42;a:6:{i:0;s:41:"SELECT * FROM "company" WHERE "user_id"=3";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.999323;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7636496;}i:45;a:6:{i:0;s:2793:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'company'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.001434;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7654168;}i:48;a:6:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='company'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.006344;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7665560;}i:51;a:6:{i:0;s:352:"INSERT INTO "employee" ("first_name", "last_name", "middle_name", "phone", "passport_number", "address", "position", "company_id", "created_at", "updated_at", "created_by", "updated_by") VALUES ('Bahodir', 'Ortiqov', 'Zokirjon og''li', '+998112563556', 'AB5456589', 'Namangan viloyati chust', 'Director', 4, 1665723172, 1665723172, 3, 3) RETURNING "id"";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.008452;i:4;a:0:{}i:5;i:7674480;}}}";s:9:"profiling";s:28308:"a:3:{s:6:"memory";i:8442344;s:4:"time";d:0.12279605865478516;s:8:"messages";a:20:{i:22;a:6:{i:0;s:54:"Opening DB connection: pgsql:host=localhost;dbname=crm";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1665723171.928689;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6282976;}i:23;a:6:{i:0;s:54:"Opening DB connection: pgsql:host=localhost;dbname=crm";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1665723171.963478;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6284880;}i:25;a:6:{i:0;s:2790:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'user'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.964368;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6494560;}i:26;a:6:{i:0;s:2790:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'user'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.978199;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6516664;}i:28;a:6:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='user'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.979065;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6532664;}i:29;a:6:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='user'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.981542;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6534232;}i:31;a:6:{i:0;s:121:"SELECT * FROM "user" WHERE ("token"='gWK9qyhg1cx7dlCIT6xRE0469zOagFb_2qAOEwTDQqqqmlqK00QkrzwWQ0cCA2lm') AND ("status"=10)";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.983967;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6827560;}i:32;a:6:{i:0;s:121:"SELECT * FROM "user" WHERE ("token"='gWK9qyhg1cx7dlCIT6xRE0469zOagFb_2qAOEwTDQqqqmlqK00QkrzwWQ0cCA2lm') AND ("status"=10)";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.986513;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6830664;}i:37;a:6:{i:0;s:2794:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'employee'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.990901;i:4;a:0:{}i:5;i:7324072;}i:38;a:6:{i:0;s:2794:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'employee'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.994291;i:4;a:0:{}i:5;i:7348584;}i:40;a:6:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='employee'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.994537;i:4;a:0:{}i:5;i:7327288;}i:41;a:6:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='employee'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.99634;i:4;a:0:{}i:5;i:7330104;}i:43;a:6:{i:0;s:41:"SELECT * FROM "company" WHERE "user_id"=3";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.999346;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7638960;}i:44;a:6:{i:0;s:41:"SELECT * FROM "company" WHERE "user_id"=3";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.001229;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7641936;}i:46;a:6:{i:0;s:2793:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'company'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.001456;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7664872;}i:47;a:6:{i:0;s:2793:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'company'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.006034;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7688424;}i:49;a:6:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='company'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.006367;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7669864;}i:50;a:6:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='company'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.008131;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7673424;}i:52;a:6:{i:0;s:352:"INSERT INTO "employee" ("first_name", "last_name", "middle_name", "phone", "passport_number", "address", "position", "company_id", "created_at", "updated_at", "created_by", "updated_by") VALUES ('Bahodir', 'Ortiqov', 'Zokirjon og''li', '+998112563556', 'AB5456589', 'Namangan viloyati chust', 'Director', 4, 1665723172, 1665723172, 3, 3) RETURNING "id"";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.00846;i:4;a:0:{}i:5;i:7674480;}i:53;a:6:{i:0;s:352:"INSERT INTO "employee" ("first_name", "last_name", "middle_name", "phone", "passport_number", "address", "position", "company_id", "created_at", "updated_at", "created_by", "updated_by") VALUES ('Bahodir', 'Ortiqov', 'Zokirjon og''li', '+998112563556', 'AB5456589', 'Namangan viloyati chust', 'Director', 4, 1665723172, 1665723172, 3, 3) RETURNING "id"";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.011106;i:4;a:0:{}i:5;i:7675856;}}}";s:2:"db";s:27516:"a:1:{s:8:"messages";a:18:{i:25;a:6:{i:0;s:2790:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'user'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.964368;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6494560;}i:26;a:6:{i:0;s:2790:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'user'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.978199;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6516664;}i:28;a:6:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='user'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.979065;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6532664;}i:29;a:6:{i:0;s:872:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='user'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.981542;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6534232;}i:31;a:6:{i:0;s:121:"SELECT * FROM "user" WHERE ("token"='gWK9qyhg1cx7dlCIT6xRE0469zOagFb_2qAOEwTDQqqqmlqK00QkrzwWQ0cCA2lm') AND ("status"=10)";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.983967;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6827560;}i:32;a:6:{i:0;s:121:"SELECT * FROM "user" WHERE ("token"='gWK9qyhg1cx7dlCIT6xRE0469zOagFb_2qAOEwTDQqqqmlqK00QkrzwWQ0cCA2lm') AND ("status"=10)";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.986513;i:4;a:1:{i:0;a:5:{s:4:"file";s:62:"D:\OpenServer\domains\projects\test-api\common\models\User.php";s:4:"line";i:82;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6830664;}i:37;a:6:{i:0;s:2794:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'employee'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.990901;i:4;a:0:{}i:5;i:7324072;}i:38;a:6:{i:0;s:2794:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'employee'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.994291;i:4;a:0:{}i:5;i:7348584;}i:40;a:6:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='employee'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.994537;i:4;a:0:{}i:5;i:7327288;}i:41;a:6:{i:0;s:876:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='employee'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.99634;i:4;a:0:{}i:5;i:7330104;}i:43;a:6:{i:0;s:41:"SELECT * FROM "company" WHERE "user_id"=3";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723171.999346;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7638960;}i:44;a:6:{i:0;s:41:"SELECT * FROM "company" WHERE "user_id"=3";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.001229;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7641936;}i:46;a:6:{i:0;s:2793:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'company'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.001456;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7664872;}i:47;a:6:{i:0;s:2793:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    COALESCE(td.typname, tb.typname, t.typname) AS data_type,
+    COALESCE(td.typtype, tb.typtype, t.typtype) AS type_type,
+    (SELECT nspname FROM pg_namespace WHERE oid = COALESCE(td.typnamespace, tb.typnamespace, t.typnamespace)) AS type_scheme,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false)  AS is_autoinc,
+    pg_get_serial_sequence(quote_ident(d.nspname) || '.' || quote_ident(c.relname), a.attname) AS sequence_name,
+    CASE WHEN COALESCE(td.typtype, tb.typtype, t.typtype) = 'e'::char
+        THEN array_to_string((SELECT array_agg(enumlabel) FROM pg_enum WHERE enumtypid = COALESCE(td.oid, tb.oid, a.atttypid))::varchar[], ',')
+        ELSE NULL
+    END AS enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey,
+    COALESCE(NULLIF(a.attndims, 0), NULLIF(t.typndims, 0), (t.typcategory='A')::int) AS dimension
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_type tb ON (a.attndims > 0 OR t.typcategory='A') AND t.typelem > 0 AND t.typelem = tb.oid OR t.typbasetype > 0 AND t.typbasetype = tb.oid
+    LEFT JOIN pg_type td ON t.typndims > 0 AND t.typbasetype > 0 AND tb.typelem = td.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT JOIN pg_constraint ct ON ct.conrelid = c.oid AND ct.contype = 'p'
+WHERE
+    a.attnum > 0 AND t.typname != '' AND NOT a.attisdropped
+    AND c.relname = 'company'
+    AND d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.006034;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7688424;}i:49;a:6:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='company'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.006367;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7669864;}i:50;a:6:{i:0;s:875:"select
+    ct.conname as constraint_name,
+    a.attname as column_name,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    fa.attname as foreign_column_name
+from
+    (SELECT ct.conname, ct.conrelid, ct.confrelid, ct.conkey, ct.contype, ct.confkey, generate_subscripts(ct.conkey, 1) AS s
+       FROM pg_constraint ct
+    ) AS ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    inner join pg_attribute a on a.attrelid=ct.conrelid and a.attnum = ct.conkey[ct.s]
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+    left join pg_attribute fa on fa.attrelid=ct.confrelid and fa.attnum = ct.confkey[ct.s]
+where
+    ct.contype='f'
+    and c.relname='company'
+    and ns.nspname='public'
+order by
+    fns.nspname, fc.relname, a.attnum";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.008131;i:4;a:1:{i:0;a:5:{s:4:"file";s:66:"D:\OpenServer\domains\projects\test-api\common\models\Employee.php";s:4:"line";i:121;s:8:"function";s:5:"__get";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}i:5;i:7673424;}i:52;a:6:{i:0;s:352:"INSERT INTO "employee" ("first_name", "last_name", "middle_name", "phone", "passport_number", "address", "position", "company_id", "created_at", "updated_at", "created_by", "updated_by") VALUES ('Bahodir', 'Ortiqov', 'Zokirjon og''li', '+998112563556', 'AB5456589', 'Namangan viloyati chust', 'Director', 4, 1665723172, 1665723172, 3, 3) RETURNING "id"";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.00846;i:4;a:0:{}i:5;i:7674480;}i:53;a:6:{i:0;s:352:"INSERT INTO "employee" ("first_name", "last_name", "middle_name", "phone", "passport_number", "address", "position", "company_id", "created_at", "updated_at", "created_by", "updated_by") VALUES ('Bahodir', 'Ortiqov', 'Zokirjon og''li', '+998112563556', 'AB5456589', 'Namangan viloyati chust', 'Director', 4, 1665723172, 1665723172, 3, 3) RETURNING "id"";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1665723172.011106;i:4;a:0:{}i:5;i:7675856;}}}";s:5:"event";s:4432:"a:25:{i:0;a:5:{s:4:"time";d:1665723171.915217;s:4:"name";s:13:"beforeRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:1;a:5:{s:4:"time";d:1665723171.918345;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:2;a:5:{s:4:"time";d:1665723171.926798;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:3;a:5:{s:4:"time";d:1665723171.96347;s:4:"name";s:9:"afterOpen";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:4;a:5:{s:4:"time";d:1665723171.987146;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"common\models\User";}i:5;a:5:{s:4:"time";d:1665723171.987189;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"common\models\User";}i:6;a:5:{s:4:"time";d:1665723171.987318;s:4:"name";s:11:"beforeLogin";s:5:"class";s:17:"yii\web\UserEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\User";}i:7;a:5:{s:4:"time";d:1665723171.98993;s:4:"name";s:10:"afterLogin";s:5:"class";s:17:"yii\web\UserEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\User";}i:8;a:5:{s:4:"time";d:1665723171.989997;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"api\modules\v1\Module";}i:9;a:5:{s:4:"time";d:1665723171.990622;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:45:"api\modules\v1\controllers\EmployeeController";}i:10;a:5:{s:4:"time";d:1665723171.996764;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"common\models\Employee";}i:11;a:5:{s:4:"time";d:1665723171.998564;s:4:"name";s:14:"beforeValidate";s:5:"class";s:19:"yii\base\ModelEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"common\models\Employee";}i:12;a:5:{s:4:"time";d:1665723171.998677;s:4:"name";s:13:"afterValidate";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"common\models\Employee";}i:13;a:5:{s:4:"time";d:1665723171.998884;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:14;a:5:{s:4:"time";d:1665723172.001391;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"common\models\Company";}i:15;a:5:{s:4:"time";d:1665723172.008311;s:4:"name";s:9:"afterFind";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"common\models\Company";}i:16;a:5:{s:4:"time";d:1665723172.00836;s:4:"name";s:12:"beforeInsert";s:5:"class";s:19:"yii\base\ModelEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"common\models\Employee";}i:17;a:5:{s:4:"time";d:1665723172.011488;s:4:"name";s:11:"afterInsert";s:5:"class";s:21:"yii\db\AfterSaveEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"common\models\Employee";}i:18;a:5:{s:4:"time";d:1665723172.011949;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:45:"api\modules\v1\controllers\EmployeeController";}i:19;a:5:{s:4:"time";d:1665723172.012561;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:21:"api\modules\v1\Module";}i:20;a:5:{s:4:"time";d:1665723172.012567;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:21;a:5:{s:4:"time";d:1665723172.012572;s:4:"name";s:12:"afterRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:22;a:5:{s:4:"time";d:1665723172.012577;s:4:"name";s:10:"beforeSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:23;a:5:{s:4:"time";d:1665723172.01298;s:4:"name";s:12:"afterPrepare";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:24;a:5:{s:4:"time";d:1665723172.013023;s:4:"name";s:9:"afterSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:91:"a:3:{s:5:"start";d:1665723171.891747;s:3:"end";d:1665723172.014664;s:6:"memory";i:8442344;}";s:4:"dump";s:6:"a:0:{}";s:6:"router";s:2443:"a:3:{s:8:"messages";a:12:{i:6;a:6:{i:0;a:3:{s:4:"rule";s:3:"gii";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1665723171.91547;i:4;a:0:{}i:5;i:4894592;}i:7;a:6:{i:0;a:3:{s:4:"rule";s:12:"gii/<id:\w+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1665723171.915478;i:4;a:0:{}i:5;i:4895344;}i:8;a:6:{i:0;a:3:{s:4:"rule";s:41:"gii/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1665723171.915482;i:4;a:0:{}i:5;i:4896096;}i:9;a:6:{i:0;a:3:{s:4:"rule";s:5:"debug";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1665723171.915486;i:4;a:0:{}i:5;i:4897168;}i:10;a:6:{i:0;a:3:{s:4:"rule";s:43:"debug/<controller:[\w\-]+>/<action:[\w\-]+>";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1665723171.91549;i:4;a:0:{}i:5;i:4897920;}i:11;a:6:{i:0;a:3:{s:4:"rule";s:16:"yii\rest\UrlRule";s:5:"match";b:0;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1665723171.915494;i:4;a:0:{}i:5;i:4898672;}i:12;a:6:{i:0;a:3:{s:4:"rule";s:28:"OPTIONS v1/employee/<action>";s:5:"match";b:0;s:6:"parent";s:16:"yii\rest\UrlRule";}i:1;i:8;i:2;s:30:"yii\rest\UrlRule::parseRequest";i:3;d:1665723171.915504;i:4;a:0:{}i:5;i:4899856;}i:13;a:6:{i:0;a:3:{s:4:"rule";s:19:"OPTIONS v1/employee";s:5:"match";b:0;s:6:"parent";s:16:"yii\rest\UrlRule";}i:1;i:8;i:2;s:30:"yii\rest\UrlRule::parseRequest";i:3;d:1665723171.915509;i:4;a:0:{}i:5;i:4900656;}i:14;a:6:{i:0;a:3:{s:4:"rule";s:15:"GET v1/employee";s:5:"match";b:0;s:6:"parent";s:16:"yii\rest\UrlRule";}i:1;i:8;i:2;s:30:"yii\rest\UrlRule::parseRequest";i:3;d:1665723171.915514;i:4;a:0:{}i:5;i:4901448;}i:15;a:6:{i:0;s:41:"Request parsed with URL rule: v1/employee";i:1;i:8;i:2;s:29:"yii\web\UrlRule::parseRequest";i:3;d:1665723171.915521;i:4;a:0:{}i:5;i:4902728;}i:16;a:6:{i:0;a:3:{s:4:"rule";s:16:"POST v1/employee";s:5:"match";b:1;s:6:"parent";s:16:"yii\rest\UrlRule";}i:1;i:8;i:2;s:30:"yii\rest\UrlRule::parseRequest";i:3;d:1665723171.915524;i:4;a:0:{}i:5;i:4903080;}i:17;a:6:{i:0;a:3:{s:4:"rule";s:16:"yii\rest\UrlRule";s:5:"match";b:1;s:6:"parent";N;}i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1665723171.915527;i:4;a:0:{}i:5;i:4904096;}}s:5:"route";s:18:"v1/employee/create";s:6:"action";s:28:"yii\rest\CreateAction::run()";}";s:7:"request";s:3523:"a:15:{s:7:"flashes";a:0:{}s:10:"statusCode";i:201;s:14:"requestHeaders";a:11:{s:13:"authorization";s:71:"Bearer gWK9qyhg1cx7dlCIT6xRE0469zOagFb_2qAOEwTDQqqqmlqK00QkrzwWQ0cCA2lm";s:12:"content-type";s:16:"application/json";s:10:"user-agent";s:21:"PostmanRuntime/7.29.2";s:6:"accept";s:3:"*/*";s:13:"cache-control";s:8:"no-cache";s:13:"postman-token";s:36:"229ba7ec-ff45-4c98-a6ab-e38eab697837";s:4:"host";s:14:"localhost:5050";s:15:"accept-encoding";s:17:"gzip, deflate, br";s:10:"connection";s:10:"keep-alive";s:14:"content-length";s:3:"233";s:6:"cookie";s:38:"_csrf=nsW0OTGzBShXGCph7D-JiTJAEfBrsL19";}s:15:"responseHeaders";a:10:{s:32:"Access-Control-Allow-Credentials";s:5:"false";s:29:"Access-Control-Expose-Headers";s:1:"*";s:28:"Access-Control-Allow-Headers";s:45:"Authorization, X-Requested-With, content-type";s:4:"Vary";s:6:"Accept";s:8:"Location";s:43:"http://localhost:5050/v1/employee/view?id=3";s:12:"Content-Type";s:31:"application/json; charset=UTF-8";s:11:"X-Debug-Tag";s:13:"6348eb23de7c4";s:16:"X-Debug-Duration";s:3:"122";s:12:"X-Debug-Link";s:37:"/debug/default/view?tag=6348eb23de7c4";s:10:"Set-Cookie";s:70:"_csrf=hBecwdGNUuJX8S5-3MC5j0Hc0OocpxaB; path=/; HttpOnly; SameSite=Lax";}s:5:"route";s:18:"v1/employee/create";s:6:"action";s:28:"yii\rest\CreateAction::run()";s:12:"actionParams";a:0:{}s:7:"general";a:5:{s:6:"method";s:4:"POST";s:6:"isAjax";b:0;s:6:"isPjax";b:0;s:7:"isFlash";b:0;s:18:"isSecureConnection";b:0;}s:11:"requestBody";a:3:{s:12:"Content Type";s:16:"application/json";s:3:"Raw";s:233:"{
+    "first_name":"Bahodir",
+    "last_name":"Ortiqov",
+    "middle_name":"Zokirjon og'li",
+    "phone":"+998112563556",
+    "passport_number":"AB5456589",
+    "address":"Namangan viloyati chust",
+    "position":"Director"
+}";s:17:"Decoded to Params";a:7:{s:10:"first_name";s:7:"Bahodir";s:9:"last_name";s:7:"Ortiqov";s:11:"middle_name";s:14:"Zokirjon og'li";s:5:"phone";s:13:"+998112563556";s:15:"passport_number";s:9:"AB5456589";s:7:"address";s:23:"Namangan viloyati chust";s:8:"position";s:8:"Director";}}s:6:"SERVER";a:28:{s:13:"DOCUMENT_ROOT";s:47:"D:\OpenServer\domains\projects\test-api\api\web";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:11:"REMOTE_PORT";s:5:"65253";s:15:"SERVER_SOFTWARE";s:29:"PHP 7.4.21 Development Server";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:11:"SERVER_NAME";s:9:"localhost";s:11:"SERVER_PORT";s:4:"5050";s:11:"REQUEST_URI";s:12:"/v1/employee";s:14:"REQUEST_METHOD";s:4:"POST";s:11:"SCRIPT_NAME";s:10:"/index.php";s:15:"SCRIPT_FILENAME";s:57:"D:\OpenServer\domains\projects\test-api\api\web\index.php";s:9:"PATH_INFO";s:12:"/v1/employee";s:8:"PHP_SELF";s:22:"/index.php/v1/employee";s:18:"HTTP_AUTHORIZATION";s:71:"Bearer gWK9qyhg1cx7dlCIT6xRE0469zOagFb_2qAOEwTDQqqqmlqK00QkrzwWQ0cCA2lm";s:12:"CONTENT_TYPE";s:16:"application/json";s:17:"HTTP_CONTENT_TYPE";s:16:"application/json";s:15:"HTTP_USER_AGENT";s:21:"PostmanRuntime/7.29.2";s:11:"HTTP_ACCEPT";s:3:"*/*";s:18:"HTTP_CACHE_CONTROL";s:8:"no-cache";s:18:"HTTP_POSTMAN_TOKEN";s:36:"229ba7ec-ff45-4c98-a6ab-e38eab697837";s:9:"HTTP_HOST";s:14:"localhost:5050";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip, deflate, br";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"233";s:19:"HTTP_CONTENT_LENGTH";s:3:"233";s:11:"HTTP_COOKIE";s:38:"_csrf=nsW0OTGzBShXGCph7D-JiTJAEfBrsL19";s:18:"REQUEST_TIME_FLOAT";d:1665723171.88387;s:12:"REQUEST_TIME";i:1665723171;}s:3:"GET";a:0:{}s:4:"POST";a:0:{}s:6:"COOKIE";a:1:{s:5:"_csrf";s:32:"nsW0OTGzBShXGCph7D-JiTJAEfBrsL19";}s:5:"FILES";a:0:{}s:7:"SESSION";a:0:{}}";s:4:"user";s:1449:"a:5:{s:2:"id";i:3;s:8:"identity";a:12:{s:2:"id";s:1:"3";s:5:"phone";s:14:"'+99899398555'";s:5:"email";s:19:"'bahodir@gmail.com'";s:5:"token";s:66:"'gWK9qyhg1cx7dlCIT6xRE0469zOagFb_2qAOEwTDQqqqmlqK00QkrzwWQ0cCA2lm'";s:4:"role";s:1:"2";s:8:"auth_key";s:34:"'MOFBf85rkkEue1ILKbaN6VpxpP_nykud'";s:13:"password_hash";s:62:"'$2y$13$Y4ZejtdDI6rj1dEaHk7uyO7o3h9M7RzZehmnY.mHDKdDYmD3O.igS'";s:10:"created_at";s:10:"1665722424";s:10:"updated_at";s:10:"1665722424";s:10:"deleted_at";s:4:"null";s:6:"status";s:2:"10";s:18:"verification_token";s:4:"null";}s:10:"attributes";a:12:{i:0;a:2:{s:9:"attribute";s:2:"id";s:5:"label";s:2:"Id";}i:1;a:2:{s:9:"attribute";s:5:"phone";s:5:"label";s:5:"Phone";}i:2;a:2:{s:9:"attribute";s:5:"email";s:5:"label";s:5:"Email";}i:3;a:2:{s:9:"attribute";s:5:"token";s:5:"label";s:5:"Token";}i:4;a:2:{s:9:"attribute";s:4:"role";s:5:"label";s:4:"Role";}i:5;a:2:{s:9:"attribute";s:8:"auth_key";s:5:"label";s:8:"Auth Key";}i:6;a:2:{s:9:"attribute";s:13:"password_hash";s:5:"label";s:13:"Password Hash";}i:7;a:2:{s:9:"attribute";s:10:"created_at";s:5:"label";s:10:"Created At";}i:8;a:2:{s:9:"attribute";s:10:"updated_at";s:5:"label";s:10:"Updated At";}i:9;a:2:{s:9:"attribute";s:10:"deleted_at";s:5:"label";s:10:"Deleted At";}i:10;a:2:{s:9:"attribute";s:6:"status";s:5:"label";s:6:"Status";}i:11;a:2:{s:9:"attribute";s:18:"verification_token";s:5:"label";s:18:"Verification Token";}}s:13:"rolesProvider";N;s:19:"permissionsProvider";N;}";s:5:"asset";s:6:"a:0:{}";s:7:"summary";a:12:{s:3:"tag";s:13:"6348eb23de7c4";s:3:"url";s:33:"http://localhost:5050/v1/employee";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:9:"127.0.0.1";s:4:"time";d:1665723171.88387;s:10:"statusCode";i:201;s:8:"sqlCount";i:9;s:9:"mailCount";i:0;s:9:"mailFiles";a:0:{}s:10:"peakMemory";i:8442344;s:14:"processingTime";d:0.12279605865478516;}s:10:"exceptions";a:0:{}}

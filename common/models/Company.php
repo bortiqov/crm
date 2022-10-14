@@ -137,7 +137,7 @@ class Company extends \yii\db\ActiveRecord
     {
         return [
             'id',
-            'name',
+            'company_name',
             'boss_full_name',
             'address',
             'phone',

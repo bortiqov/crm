@@ -76,6 +76,9 @@ class Module extends \yii\base\Module
 
                 'GET get-me' => 'get-me',
 
+                'POST ' => 'create',
+
+
             ]
         ],
         [

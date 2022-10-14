@@ -235,6 +235,11 @@ class User extends ActiveRecord implements IdentityInterface
         return \Yii::$app->security->generateRandomString(64);
     }
 
+    public function setToken()
+    {
+        $this->token = self::generateToken();
+    }
+
     public function updateToken()
     {
         return $this->updateAttributes([
@@ -250,8 +255,16 @@ class User extends ActiveRecord implements IdentityInterface
 
     public function fields()
     {
-        return ArrayHelper::merge(parent::fields(), [
+        return [
+            'id',
+            'email',
+            'phone',
+            'status',
+            'token',
+            'role',
+            'created_at',
+            'updated_at',
             'company'
-        ]);
+        ];
     }
 }

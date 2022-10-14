@@ -2,10 +2,13 @@
 
 namespace api\modules\v1\controllers;
 
+use api\models\form\CompanyForm;
 use common\components\CrudController;
 
+use common\models\User;
 use Yii;
 use yii\rest\OptionsAction;
+use yii\web\NotFoundHttpException;
 
 
 /**
@@ -49,23 +52,50 @@ class UserController extends CrudController
 
     }
 
-
-    public function actionUpdate()
+    public function actionCreate()
     {
         $requestParams = Yii::$app->getRequest()->getBodyParams();
         if (empty($requestParams)) {
             $requestParams = Yii::$app->getRequest()->getQueryParams();
         }
 
-        $form = new UpdateForm();
+        $form = new CompanyForm();
         $form->setAttributes($requestParams);
         $user = $form->save();
 
-        if (!$user) {
-            return $form;
+        if ($user instanceof User) {
+            return $user;
+        }
+        return $form;
+    }
+
+
+    public function actionUpdate($id)
+    {
+        $requestParams = Yii::$app->getRequest()->getBodyParams();
+        if (empty($requestParams)) {
+            $requestParams = Yii::$app->getRequest()->getQueryParams();
         }
 
-        return $user;
+        $form = new CompanyForm(['id' => $id]);
+        $form->setAttributes($requestParams);
+        $user = $form->save();
+
+        if ($user instanceof User) {
+            return $user;
+        }
+        return $form;
+    }
+
+    public function actionDelete($id)
+    {
+        $user = User::findOne($id);
+        if (!$user) {
+            throw new NotFoundHttpException('User not found');
+        }
+
+        return $user->delete();
+
     }
 
 
