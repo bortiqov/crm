@@ -69,7 +69,7 @@ class EmployeeSearch extends Employee
             'status' => $this->status,
         ]);
 
-        if (\Yii::$app->user->role !== User::ROLE_ADMIN) {
+        if (\Yii::$app->user->identity->role !== User::ROLE_ADMIN) {
             $query->andWhere(['company_id' => \Yii::$app->user->identity->company->id]);
         }
 

@@ -103,7 +103,7 @@ class Module extends \yii\base\Module
                 'OPTIONS <action>' => 'options',
                 'OPTIONS ' => 'options',
 
-                'GET' => 'index',
+                'GET' => 'view',
                 'POST' => 'create',
                 'PUT <id:\d+>' => 'update',
                 'DELETE <id:\d+>' => 'delete',

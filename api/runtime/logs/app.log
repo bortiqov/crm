@@ -2564,3 +2564,153 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1665722405.1281
     'REQUEST_TIME' => 1665722405
 ]
+2022-10-14 07:54:59 [127.0.0.1][1][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\User::role in D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 D:\OpenServer\domains\projects\test-api\common\models\search\EmployeeSearch.php(72): yii\base\Component->__get()
+#1 D:\OpenServer\domains\projects\test-api\api\modules\v1\controllers\EmployeeController.php(20): common\models\search\EmployeeSearch->search()
+#2 [internal function]: api\modules\v1\controllers\EmployeeController->actionIndex()
+#3 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#4 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#5 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#6 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#7 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#8 D:\OpenServer\domains\projects\test-api\api\web\index.php(21): yii\base\Application->run()
+#9 {main}
+2022-10-14 07:54:58 [127.0.0.1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'vindZOfZ5ip3-csAHuR3IsqTdYvtsXqo'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\OpenServer\\domains\\projects\\test-api\\api\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65273'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '5050'
+    'REQUEST_URI' => '/v1/employee'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\OpenServer\\domains\\projects\\test-api\\api\\web\\index.php'
+    'PATH_INFO' => '/v1/employee'
+    'PHP_SELF' => '/index.php/v1/employee'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '91888899-21a6-4683-a8d0-4e83bba5e844'
+    'HTTP_HOST' => 'localhost:5050'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=vindZOfZ5ip3-csAHuR3IsqTdYvtsXqo'
+    'REQUEST_TIME_FLOAT' => 1665723298.9013
+    'REQUEST_TIME' => 1665723298
+]
+2022-10-14 07:55:37 [127.0.0.1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 2 in D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\rest\DeleteAction.php(30): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\DeleteAction->run()
+#2 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Action.php(93): call_user_func_array()
+#3 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\Action->runWithParams()
+#4 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#5 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#6 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#7 D:\OpenServer\domains\projects\test-api\api\web\index.php(21): yii\base\Application->run()
+#8 {main}
+2022-10-14 07:55:37 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'CE2oEq69WP8-ExReXOFoB_n1AM_LSK6W'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\OpenServer\\domains\\projects\\test-api\\api\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64503'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '5050'
+    'REQUEST_URI' => '/v1/employee/2'
+    'REQUEST_METHOD' => 'DELETE'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\OpenServer\\domains\\projects\\test-api\\api\\web\\index.php'
+    'PATH_INFO' => '/v1/employee/2'
+    'PHP_SELF' => '/index.php/v1/employee/2'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => '632f2cc8-99ab-41f1-a0b1-894859724eb3'
+    'HTTP_HOST' => 'localhost:5050'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=CE2oEq69WP8-ExReXOFoB_n1AM_LSK6W'
+    'REQUEST_TIME_FLOAT' => 1665723337.8212
+    'REQUEST_TIME' => 1665723337
+]
+2022-10-14 07:58:25 [127.0.0.1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure()
+#1 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction()
+#2 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction()
+#3 [internal function]: yii\base\ActionFilter->beforeFilter()
+#4 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Component.php(633): call_user_func()
+#5 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Module.php(724): yii\base\Component->trigger()
+#6 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Controller.php(166): yii\base\Module->beforeAction()
+#7 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#8 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#9 D:\OpenServer\domains\projects\test-api\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#10 D:\OpenServer\domains\projects\test-api\api\web\index.php(21): yii\base\Application->run()
+#11 {main}
+2022-10-14 07:58:25 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'ziz7Ybci643dQWi1ufyiGYIHLTgOLr64'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\OpenServer\\domains\\projects\\test-api\\api\\web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64525'
+    'SERVER_SOFTWARE' => 'PHP 7.4.21 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '5050'
+    'REQUEST_URI' => '/v1/user/get-me'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\OpenServer\\domains\\projects\\test-api\\api\\web\\index.php'
+    'PATH_INFO' => '/v1/user/get-me'
+    'PHP_SELF' => '/index.php/v1/user/get-me'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_USER_AGENT' => 'PostmanRuntime/7.29.2'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_POSTMAN_TOKEN' => 'dbbf7c3e-aec7-48da-a9db-8ceb965acec3'
+    'HTTP_HOST' => 'localhost:5050'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '190'
+    'HTTP_CONTENT_LENGTH' => '190'
+    'HTTP_COOKIE' => '_csrf=ziz7Ybci643dQWi1ufyiGYIHLTgOLr64'
+    'REQUEST_TIME_FLOAT' => 1665723505.3997
+    'REQUEST_TIME' => 1665723505
+]
